@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% block title %}
+  About |
+{% endblock %}
+{% block about %}active{% endblock about %}
+
+
+{% block content %}
+
+<div class="container-fluid" style="overflow-x: hidden;">
+    <div class="row text-white">
+        
+        {% comment %} About Image {% endcomment %}
+        <div class="col-md-4 d-flex justify-content-center align-items-center">
+            <img class="img-fluid pt-lg-5 mt-lg-2" src="/static/MainApp/img/team.svg" alt="" height="400px" width="400px">
+        </div>
+        {% comment %} COL 2 {% endcomment %}
+        <div class="col-md-8 d-flex justify-content-center align-items-center text-light"
+            style="position: relative;">
+            <div class="card mt-5" style="width: auto; background-color: #393E46; border-radius: 50px;">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Welcome to our final year project titled:<br>"Analysis and Prediction of Common Health Issues using Machine Learning"</h5><hr>
+                    <p class="card-text">Our project is focused on exploring the application of machine learning algorithms in the field of healthcare to analyze and predict the occurrence of common health issues like heart disease, lung disease, and diabetes. <br>
+
+                        Our team consists of four final-year students pursuing a Bachelor's degree in Computer Science and Engineering from Prof. Ram Meghe Institute of Technology and Research, Badnera. The team members include Pranjal, Yash, Dhawal, and Pratik. Under the guidance of Dr. R. R. Karwa, our project is aimed at providing insights into the factors that contribute to the development of these health issues, and developing a machine learning model that can predict their occurrence with a high degree of accuracy. <br>
+                        
+                        {% comment %} The healthcare industry is undergoing a massive transformation with the integration of technology, and our project aims to contribute to this revolution. Machine learning algorithms have been successfully used in various fields like finance, marketing, and manufacturing. However, their application in the healthcare industry is still at a nascent stage. Our project seeks to explore the potential of machine learning algorithms in predicting the occurrence of common health issues and assist medical professionals in providing timely interventions to prevent their onset. {% endcomment %}
+                        
+                        Our project is unique in the sense that we are not limiting our analysis to a single health issue but are instead looking at three of the most common health issues that affect a significant percentage of the population worldwide. Through our research, we aim to understand the various factors that contribute to the development of these health issues, including lifestyle, genetics, and environmental factors, among others. <hr>
+                        
+                        {% comment %} In conclusion, our final year project is focused on exploring the application of machine learning algorithms in healthcare to analyze and predict the occurrence of common health issues like heart disease, lung disease, and diabetes. We are a team of four final-year students from Prof. Ram Meghe Institute of Technology and Research, Badnera, under the guidance of Dr. Roshan R. Karwa. We believe that our project has the potential to contribute significantly to the healthcare industry and assist medical professionals in providing timely interventions to prevent the onset of these health issues.</p> {% endcomment %}
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}

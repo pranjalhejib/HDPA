@@ -1,0 +1,212 @@
+{% extends 'base.html' %}
+{% block title %}
+Contact |
+{% endblock %}
+{% block contact %}
+active
+{% endblock %}
+
+{% block mediasection %}
+
+/* section 1-------------------------------------------------------------------- */
+.section1 {
+  position: relative;
+  /* height: 200.3vh; Set section height to full viewport height */
+
+}
+
+.social-icons {
+  /* position: relative; */
+  width: auto;
+  right: auto;
+  left: 1.0rem;
+  /* transform: translateX(-50%); */
+  margin-bottom: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.social-icons li {
+  /* margin-bottom: 10px; */
+  list-style: none;
+}
+
+.social-icons li a {
+  display: block;
+  color: black;
+  font-size: 25px;
+  margin-bottom: 20px;
+  background-color: transparent;
+  /* border-radius: 50%; */
+
+}
+
+.social-icons li a:hover {
+  color: #64FFDA;
+  background-color: transparent;
+}
+
+/* Vertical Line -------------------------------------------------------------- */
+.vertical-line {
+  border: 1px solid black;
+  height: 250px;
+}
+/* SECTION 3---------------------------------------------------------------------- */
+.section3 {
+  position: relative;
+  /* height: 200.3vh; Set section height to full viewport height */
+
+}
+
+.vmail {
+  /* position: relative; */
+  /* width: auto; */
+  left: auto;
+  right: -4.0rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.vmail h5 {
+  margin-bottom: 9.5rem;
+}
+
+.vmail a {
+  display: block;
+  color: black;
+  font-size: 15px;
+  /* margin-bottom: 0px; */
+  /* background-color: transparent; */
+  text-decoration: none;
+  /* border-radius: 50%; */
+
+}
+
+.vmail a:hover {
+  color: #64FFDA;
+  /* background-color: transparent; */
+}
+
+{% endblock mediasection %}
+
+
+
+
+
+{% block content %}
+<div class="container-fluid" style="overflow-x: hidden;">
+  <div class="row text-white">
+    <div class="col-md-1 d-flex justify-content-center align-items-center">
+   
+    <section class="section1">
+      <ul class="social-icons fixed-bottom">
+        <li><a href="mailto:hejibpranjal@gmail.com"><i class="fa-solid fa-envelope"></i></a></li>
+        <li><a href="https://github.com/pranjalhejib"><i class="fab fa-github"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/pranjalhejib/"><i class="fa-brands fa-linkedin-in"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+        <li><a href="https://twitter.com/HejibPranjal"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fab fa-medium"></i></a></li>
+
+        <div class="vertical-line"></div>
+      </ul>
+    </section>
+    </div>
+    {% comment %}column 1{% endcomment %}
+    <div class="col-md-5 d-flex justify-content-center align-items-center">
+      <img class="img-fluid pt-lg-5 mt-lg-2" src="/static/MainApp/img/contact.svg" alt="contact" height="600px"
+        width="600px" />
+    </div>
+
+    {% comment %}column 2{% endcomment %}
+    <div class="col-md-5 d-flex justify-content-center align-items-center text-dark text-center"
+      style="position: relative;">
+      <div class="card mt-5" style="width: auto; background-color: #393E46; border-radius: 25px;">
+        <div class="card-body text-center">
+          <hr>
+
+          <h3 class="card-title"><span style="background-color: #CBE4DE; border-radius: 10px;">&nbsp;Contact
+              Us&nbsp;</span></h3>
+          <hr />
+          {% comment %} <p class="card-text"></p> {% endcomment %}
+
+          <form id="contact-form" name="contact-form" action="" method="POST">
+            <!-- Grid row -->
+            <div class="row">
+              <!-- Grid column -->
+              <div class="col-md-6">
+                <div class="md-form mb-0">
+                  <input type="text" id="fname" name="fname" class="form-control" placeholder="First Name" />
+                  <label for="name" class=""></label>
+                </div>
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-md-6">
+                <div class="md-form mb-0">
+                  <input type="text" id="lname" name="lname" class="form-control" placeholder="Last Name" />
+                  <label for="" class=""></label><br><br>
+                </div>
+              </div>
+            </div>
+
+            <!-- Grid row -->
+            <div class="row">
+              <div class="col-md-12">
+                <div class="md-form mb-0">
+                  <input type="email" id="email" name="email" class="form-control" placeholder="E-Mail" />
+                  <label for="subject" class=""></label><br><br>
+                </div>
+              </div>
+            </div>
+            <!-- Grid row -->
+            <div class="row">
+              <div class="col-md-12">
+                <div class="md-form mb-0">
+                  <input type="text" id="subject" name="subject" class="form-control" placeholder="Subject" />
+                  <label for="subject" class=""></label><br><br>
+                </div>
+              </div>
+            </div>
+
+            <!-- Grid row -->
+            <div class="row">
+              <div class="col-md-12">
+                <div class="md-form">
+                  <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"
+                    placeholder="Message"></textarea>
+                  <label for="message"></label>
+                </div>
+              </div>
+            </div>
+          </form>
+          {% comment %} BUTTON SUBMIT {% endcomment %}
+          <div class="text-center text-md-left">
+                <a title="Submit" type="submit"><button type="button" class="btn btn-outline-success" style="border-color: #64FFDA; color:#64FFDA;"><i
+                  class="fa-solid fa-paper-plane me-2"></i>
+                Submit</button>
+            </a>
+          </div>
+
+          {% comment %} <div class="status"></div> {% endcomment %}
+
+        </div>
+      </div>
+    </div>
+          <!-- SECTION 3 -->
+          <div class="col-md-1">
+            <section class="section3">
+              <div class="vmail fixed-bottom">
+                <h5 style="letter-spacing: 4px; transform: rotate(90deg); color: black;"><a
+                    href="mailto:hejibpranjal@gmail.com">hejibpranjal@gmail.com</a></h5>
+                <div class="vertical-line"></div>
+              </div>
+            </section>
+
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% block title %}Home | {% endblock title %}
+{% block home %}active{% endblock home %}
+
+{% block content %}
+
+
+
+
+<div class="container-fluid" style="overflow-x: hidden;">
+    <div class="row text-white">
+        <div class="col-md-6 d-flex justify-content-center align-items-center">
+            <img class="img-fluid pt-lg-5 mt-lg-2" src="/static/MainApp/img/medicine.svg" alt="" height="600px"
+                width="600px">
+        </div>
+        <div class="col-md-6 d-flex justify-content-center align-items-center text-light" style="position: relative;">
+            <div class="card mt-5" style="width: auto; background-color: #393E46; border-radius: 50px;">
+                <div class="card-body text-center">
+                    <hr>
+                    <h3 class="card-title">Analysis and Prediction of Common Health
+                        Issues using Machine Learning</h3>
+                    <hr>
+                    {% comment %} <p class="card-text"></p> {% endcomment %}
+
+
+                    <a title="Download Project Report" type="submit" href="./static/MainApp/Final_Year_Synopsis.pdf"
+                        download>
+                        <button type="button" class="btn btn-outline-success"
+                            style="border-color: #64FFDA; color:#64FFDA;">
+                            <i class="fa-solid fa-download me-2"></i>Project Report</button>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}

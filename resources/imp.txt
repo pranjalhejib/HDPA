@@ -1,0 +1,1 @@
+TO ACTIVATE VIRTUAL ENVIRONMENT:: PS D:\LearnCode\Django\HealthDiseasePrediction\HDPA> myvenv\scripts\activate   

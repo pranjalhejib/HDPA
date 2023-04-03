@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% block title %}
+  Services |
+{% endblock %}
+{% block services %}
+  active
+{% endblock %}
+
+{% block content %}
+
+  <!-- card -->
+  <div class="container-fluid" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+    <div class="row justify-content-center">
+      <div class="col-lg-8 col-md-10">
+        <div class="card text-center" style="background-color: white; border-radius: 10px;">
+          <div class="card-header pb-0" style="background-color: #222831; color: #222831; border-radius: 10px;">
+            <h3><span style="background-color: #CBE4DE; border-radius: 10px;"><b>&nbsp;Analysis & Predictions&nbsp;</b></span></h3>
+          </div>
+          <div class="card-body pb-0">
+            <div class="row">
+              <div class="col-md-4">
+                <a class="img-fluid" title="Open Heart Disease" href="/heart/" style="text-decoration: none; color: black;">
+                  <img src="/static/MainApp/img/heart.jpg" alt="heart" height="150px" width="150px" /><hr />
+                  <h5><span style="background-color: #CBE4DE; border-radius: 10px;">&nbsp;Heart Disease&nbsp;</span></h5>
+                </a><hr />
+              </div>
+              <div class="col-md-4">
+                <a class="img-fluid" title="Open Diabetes" href="/diabetes/" style="text-decoration: none; color: black;">
+                  <img src="/static/MainApp/img/diabetes.jpg" alt="diabetes" height="150px" width="250px" /><hr />
+                  <h5><span style="background-color: #CBE4DE; border-radius: 10px;">&nbsp;Diabetes&nbsp;</span></h5>
+                </a><hr />
+              </div>
+              <div class="col-md-4">
+                <a class="img-fluid" title="Open Lung Disease" href="/lungs/" style="text-decoration: none; color: black;">
+                  <img src="/static/MainApp/img/lungs.jpg" alt="lungs" height="150px" width="250px" /><hr />
+                  <h5><span style="background-color: #CBE4DE; border-radius: 10px;">&nbsp;Lung Disease&nbsp;</span></h5>
+                </a><hr />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock content %}
