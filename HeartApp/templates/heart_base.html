@@ -1,0 +1,150 @@
+<html lang="en">
+
+<head>
+  {% comment %}required meta tags{% endcomment %}
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  {% comment %}title [TABS]{% endcomment %}
+  <title>
+    {% block title %}
+
+    {% endblock %}Heart Disease
+  </title>
+  {% comment %}Bootstrap CSS{% endcomment %}
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  {% comment %}favicon.ico{% endcomment %}
+  <link rel="icon" type="image/x-icon" href="/static/favicon_io/favicon.ico" />
+
+  {% comment %}font awesome kit{% endcomment %}
+  <script src="https://kit.fontawesome.com/8f032e7e50.js" crossorigin="anonymous"></script>
+  {% comment %} Google Fonts {% endcomment %}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet" />
+</head>
+<style>
+  body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Merriweather', serif;
+  }
+
+  .sidebar .nav-link {
+    font-size: 1.0rem;
+    color: black;
+  }
+
+  .sidebar .nav-link:hover {
+    border-radius: 20px;
+    background-color: #CBE4DE;
+  }
+
+  .sidebar .nav-link.active {
+    background-color: #CBE4DE;
+    border-radius: 20px;
+  }
+</style>
+{% comment %} BODY {% endcomment %}
+
+<body>
+  <div class="text-center pt-3 position-fixed w-100" style="color: black; background-color: white;">
+    <h2><img src="/static/MainApp/img/heart.jpg" alt="heart" height="40px" width="40px" />
+      <span style="background-color: #CBE4DE; border-radius: 10px;">&nbsp;Heart Disease Prediction Using Machine
+        Learning&nbsp;</span><img src="/static/MainApp/img/heart.jpg" alt="heart" height="40px" width="40px" />
+    </h2>
+    <hr style="margin: auto;">
+  </div>
+  {% comment %} sidebar {% endcomment %}
+  <div class="container-fluid h-100">
+    <div class="row h-100">
+      <nav class="col-md-3 col-lg-2 d-md-block sidebar mt-5 pt-5">
+        <div class="position-fixed h-100">
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link" href="/"><span style="color: #00ADB5;"><i
+                    class="fa-solid fa-house-chimney"></i>&nbsp;Home</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="/heart">
+                <i class="fa-solid fa-forward"></i> Dashboard</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">
+                <span style="color: #00ADB5;"><i class="fa-solid fa-database"></i> Dataset</span>
+
+              </a>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fa-solid fa-forward"></i> Dataset Overview</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fa-solid fa-forward"></i> Dataset Details</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fa-solid fa-forward"></i> Dataset Samples</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fa-solid fa-forward"></i> Statistical Analysis</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fa-solid fa-forward"></i> Frequency Analysis</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fa-solid fa-forward"></i> Distribution Analysis</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fa-solid fa-forward"></i> Data Exploration</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">
+                <span style="color: #00ADB5;"><i class="fa-solid fa-brain"></i> Machine Learning </span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fa-solid fa-forward"></i> Classification</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fa-solid fa-forward"></i> Comparative Study</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fa-solid fa-forward"></i> Prediction</a>
+            </li>
+
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="col-md-9 col-lg-10 d-md-block sidebar mt-5 pt-5">
+          <!-- album -->
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  {% comment %}Bootstrap JS bundle{% endcomment %}
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
