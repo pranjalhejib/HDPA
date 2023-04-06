@@ -49,6 +49,7 @@
 {% comment %} BODY {% endcomment %}
 
 <body>
+  {% comment %} TITLE {% endcomment %}
   <div class="text-center pt-3 position-fixed w-100" style="color: black; background-color: white;">
     <h2><img src="/static/MainApp/img/heart.jpg" alt="heart" height="40px" width="40px" />
       <span style="background-color: #CBE4DE; border-radius: 10px;">&nbsp;Heart Disease Prediction Using Machine
@@ -56,9 +57,10 @@
     </h2>
     <hr style="margin: auto;">
   </div>
-  {% comment %} sidebar {% endcomment %}
+  
   <div class="container-fluid h-100">
     <div class="row h-100">
+      {% comment %} SIDEBAR {% endcomment %}
       <nav class="col-md-3 col-lg-2 d-md-block sidebar mt-5 pt-5">
         <div class="position-fixed h-100">
           <ul class="nav flex-column">
@@ -131,8 +133,9 @@
           </ul>
         </div>
       </nav>
+      {% comment %} MAIN CONTENT {% endcomment %}
       <div class="col-md-9 col-lg-10 d-md-block sidebar mt-5 pt-5">
-          <!-- album -->
+          {% block content %}{% endblock content %}
       </div>
     </div>
   </div>
